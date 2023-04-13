@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CustomBox = styled(Box)(({ theme }) => ({
   position: "fixed",
   zIndex: "100",
-  top: "110.4px",
+  top: "100px",
   left: "0",
   right: "0",
   // opacity: "0.95",
