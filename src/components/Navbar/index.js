@@ -20,6 +20,8 @@ const links = [
 ];
 
 const NavbarContainer = styled(Container)(({ theme }) => ({
+  paddingTop: "35px",
+  paddingBottom: "6px",
   maxWidth: "1166px!important",
   display: "flex",
   alignItems: "center",
@@ -91,7 +93,6 @@ const useStyles = makeStyles((theme) => ({
     position: "sticky",
     top: "0",
     zIndex: "100",
-    paddingTop: "41px",
   },
   menu: {
     display: "none!important",
@@ -194,8 +195,6 @@ const Navbar = ({
           bg || toggle
             ? {
                 backgroundColor: backgroundColor,
-                paddingTop: "23px",
-                paddingBottom: "18px",
               }
             : { backgroundColor: "transparent" }
         }
@@ -278,7 +277,7 @@ const Navbar = ({
       </Box>
       {toggle && (
         <>
-          <Menu backgroundColor={backgroundColor}></Menu>
+          <Menu backgroundColor={backgroundColor} toggle={toggle}></Menu>
           <Box onClick={handleToggle} className={classes.overlay}></Box>
         </>
       )}

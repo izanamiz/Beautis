@@ -117,8 +117,7 @@ const Blog = () => {
       <Grid
         container
         justifyContent={"center"}
-        columnSpacing={"49px"}
-        rowSpacing={"49px"}
+        spacing={"49px"}
         sx={{ paddingTop: "79px" }}
       >
         {obj.map((val, idx) => {

@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "0 0",
     backgroundSize: "100% 100%",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("lg")]: {
       backgroundSize: "auto 100%",
     },
     paddingBottom: "262.5px",

@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "0",
     },
   },
+  img: {
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
+  },
 }));
 
 const ContactSection = () => {

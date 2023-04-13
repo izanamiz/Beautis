@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, styled } from "@mui/material";
+import { Box, CardMedia, Grid, styled } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import CustomContainer from "../../../components/CustomContainer";
 import {
@@ -20,12 +20,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "0 0",
     textAlign: "center",
-    backgroundSize:"100%",
+    backgroundSize: "100%",
     paddingBottom: "141px",
   },
   img: {
-    width: "100%",
-    maxHeight: "254px",
+    width: "auto",
+    height: "100%",
+    borderRadius: "25px",
   },
 }));
 const ServiceSection = () => {
@@ -42,21 +43,37 @@ const ServiceSection = () => {
         </CustomDesc>
         <Grid
           container
-          columnSpacing={{ md: "84px", sm: "24px", xs: "24px" }}
-          rowSpacing={{ md: "68px", sm: "24px", xs: "24px" }}
+          columnSpacing={{ md: "84px", bg: "50px", xxs: "35px", xs: "24px" }}
+          rowSpacing={{ md: "68px", bg: "50px", xxs: "35px", xs: "24px" }}
           paddingTop={"70px"}
         >
-          <Grid item md={4} sm={4} xs={6}>
-            <CustomImg src={S1} className={classes.img}></CustomImg>
+          <Grid item sm={4} xxs={6} xs={6}>
+            <CardMedia
+              component="img"
+              src={S1}
+              className={classes.img}
+            ></CardMedia>
           </Grid>
-          <Grid item md={8} sm={8} xs={12} order={{ md: 2, sm: 2, xs: 3 }}>
-            <CustomImg src={S2} className={classes.img}></CustomImg>
+          <Grid item sm={8} xxs={12} xs={12} order={{ sm: 2, xxs: 3, xs: 3 }}>
+            <CardMedia
+              component="img"
+              src={S2}
+              className={classes.img}
+            ></CardMedia>
           </Grid>
-          <Grid item md={8} sm={8} xs={12} order={{ md: 3, sm: 3, xs: 4 }}>
-            <CustomImg src={S3} className={classes.img}></CustomImg>
+          <Grid item sm={8} xxs={12} xs={12} order={{ sm: 3, xxs: 4, xs: 4 }}>
+            <CardMedia
+              component="img"
+              src={S3}
+              className={classes.img}
+            ></CardMedia>{" "}
           </Grid>
-          <Grid item md={4} sm={4} xs={6} order={{ md: 4, sm: 4, xs: 2 }}>
-            <CustomImg src={S4} className={classes.img}></CustomImg>
+          <Grid item sm={4} xxs={6} xs={6} order={{ sm: 4, xxs: 2, xs: 2 }}>
+            <CardMedia
+              component="img"
+              src={S4}
+              className={classes.img}
+            ></CardMedia>
           </Grid>
         </Grid>
       </CustomContainer>

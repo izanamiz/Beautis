@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "0 0",
     backgroundSize: "100% 100%",
+    [theme.breakpoints.down("lg")]: {
+      backgroundSize: "auto 100%",
+    },
     position: "relative",
   },
   mask: {
@@ -26,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${Mask})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100%",
+    [theme.breakpoints.down("lg")]: {
+      backgroundSize: "auto 100%",
+    },
   },
   wrapper: {
     position: "relative",

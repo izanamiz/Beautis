@@ -73,15 +73,10 @@ const GallerySection = () => {
           </CustomDesc>
         </Grid>
       </Grid>
-      <Grid
-        container
-        className={classes.grid}
-        rowSpacing={"38px!important"}
-        columnSpacing={"36px!important"}
-      >
+      <Grid container spacing={"38px"} className={classes.grid}>
         {obj.map((val, idx) => {
           return (
-            <Grid item md={4} sm={6} xs={12} key={idx}>
+            <Grid item md={4} xxs={6} xs={12} key={idx}>
               <CustomImg src={val} width={"100%"}></CustomImg>
             </Grid>
           );

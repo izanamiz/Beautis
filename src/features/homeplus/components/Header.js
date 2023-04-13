@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100%",
     marginTop: "-110.4px",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("lg")]: {
       backgroundSize: "auto 100%",
     },
   },

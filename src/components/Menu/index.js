@@ -1,11 +1,11 @@
-import { styled, Box, Typography } from "@mui/material";
+import { styled, Box, Typography, Collapse } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const CustomBox = styled(Box)(({ theme }) => ({
   position: "fixed",
   zIndex: "100",
-  top: "108px",
+  top: "110.4px",
   left: "0",
   right: "0",
   // opacity: "0.95",
@@ -30,9 +30,9 @@ const CustomTypography = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const Menu = ({ backgroundColor }) => {
+const LinkList = () => {
   return (
-    <CustomBox sx={{ backgroundColor: backgroundColor }}>
+    <Box>
       <Link to="/home">
         <CustomTypography>Home</CustomTypography>
       </Link>
@@ -48,6 +48,15 @@ const Menu = ({ backgroundColor }) => {
       <Link to="/contact">
         <CustomTypography>Contact</CustomTypography>
       </Link>
+    </Box>
+  );
+};
+const Menu = ({ backgroundColor, toggle }) => {
+  return (
+    <CustomBox sx={{ backgroundColor: backgroundColor }}>
+      <Collapse in={toggle} appear={true} unmountOnExit>
+        <LinkList />
+      </Collapse>
     </CustomBox>
   );
 };

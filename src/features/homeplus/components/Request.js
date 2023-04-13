@@ -54,7 +54,11 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1em",
     color: "#8B8B8B",
   },
- 
+  textField: {
+    "& fieldset": {
+      borderRadius: "15px 0 0 15px!important",
+    },
+  },
   img: {
     position: "relative",
     top: "50%",
@@ -82,6 +86,7 @@ const Request = () => {
             <Box sx={{ display: "flex" }}>
               <CustomTextField
                 label="Insert your phone number here"
+                className={classes.textField}
               />
               <CustomButton>
                 <CustomImg src={Phone} className={classes.img}></CustomImg>

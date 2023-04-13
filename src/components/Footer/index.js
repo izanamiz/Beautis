@@ -19,8 +19,10 @@ const CustomBox = styled(Box)(({ theme }) => ({
   backgroundSize: "100% 100%",
   paddingTop: "253px",
   paddingBottom: "91.16px",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("lg")]: {
     backgroundSize: "auto 100%",
+  },
+  [theme.breakpoints.down("md")]: {
     paddingTop: "100px",
   },
 }));
