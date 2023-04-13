@@ -6,6 +6,9 @@ const CustomBox = styled(Box)(({ theme }) => ({
   position: "fixed",
   zIndex: "100",
   top: "100px",
+  [theme.breakpoints.down("xxs")]: {
+    top: "90px",
+  },
   left: "0",
   right: "0",
   // opacity: "0.95",
